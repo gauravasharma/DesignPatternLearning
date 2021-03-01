@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{64C03839-DB96-4048-B3DF-AD12628B131A}</ProjectGuid>
+    <ProjectGuid>{FF9BA14E-B356-4AA3-A343-AC6C9A2F873D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DesignPattern</RootNamespace>
-    <AssemblyName>DesignPattern</AssemblyName>
+    <RootNamespace>Singleton</RootNamespace>
+    <AssemblyName>Singleton</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Factory\CardFactory.cs" />
-    <Compile Include="Product\CreditCard.cs" />
-    <Compile Include="Factory\GoldCardFactory.cs" />
-    <Compile Include="Product\GoldCreditCard.cs" />
-    <Compile Include="Factory\PlatinumCardFactory.cs" />
-    <Compile Include="Product\PlatinumCreditCard.cs" />
-    <Compile Include="FactoryPattern.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
