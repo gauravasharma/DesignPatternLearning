@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FactoryPattern;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,20 +11,12 @@ namespace DesignPattern
     {
         static void Main(string[] args)
         {
-            CardFactory factory = null;
-
-            factory = new GoldCardFactory(50000);
-
-            CreditCard card = factory.GetCardObject();
-
-            Console.WriteLine(card.CardType);
-
-            factory = new PlatinumCardFactory(50000);
-
-            CreditCard card1 = factory.GetCardObject();
-
-            Console.WriteLine(card1.CardType);
-
+            AbstractFactory factory = null;
+            factory = new CardFactory();
+            CreditCard obj1=factory.GetCardObject(1);
+            Console.WriteLine(obj1.CardType);
+            CreditCard obj2 = factory.GetCardObject(2);
+            Console.WriteLine(obj2.CardType);
             Console.ReadLine();
         }
     }

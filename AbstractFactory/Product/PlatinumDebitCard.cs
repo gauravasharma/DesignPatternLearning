@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace AbstractFactory
 {
-    class Program
+    public class PlatinumDebitCard :IDebitCard
     {
-        static void Main(string[] args)
+        public string Name()
         {
+            return "Platinum debit card";
         }
     }
 }

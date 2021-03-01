@@ -1,13 +1,25 @@
-﻿using System;
+﻿using DesignPattern;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPattern
+namespace FactoryPattern
 {
-    public abstract class CardFactory
+    public class CardFactory :AbstractFactory
     {
-        public abstract CreditCard GetCardObject();
+        public override CreditCard GetCardObject(int id)
+        {
+            switch(id)
+            {
+                case 1:
+                   return new GoldCreditCard(5000);
+                case 2:
+                    return new PlatinumCreditCard(10000);
+            }
+
+            return null;
+        }
     }
 }
