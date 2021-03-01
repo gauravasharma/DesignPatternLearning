@@ -49,7 +49,7 @@
     <Compile Include="Product\GoldCreditCard.cs" />
     <Compile Include="Factory\PlatinumCardFactory.cs" />
     <Compile Include="Product\PlatinumCreditCard.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="FactoryPattern.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

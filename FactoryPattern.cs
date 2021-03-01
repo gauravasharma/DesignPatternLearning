@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPattern
 {
-    class Program
+    class FactoryPattern
     {
         static void Main(string[] args)
         {
